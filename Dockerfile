@@ -1,5 +1,5 @@
 ARG LITESTREAM_IMAGE_TAG=0.3.13
-ARG MEMOS_IMAGE_TAG=0.25.0
+ARG MEMOS_IMAGE_TAG=0.25.1
 
 # Get litestream image
 FROM docker.io/litestream/litestream:${LITESTREAM_IMAGE_TAG} AS litestream_package
@@ -10,7 +10,7 @@ FROM ghcr.io/usememos/memos:${MEMOS_IMAGE_TAG} AS memos_package
 ENTRYPOINT []
 
 # Build production image 
-FROM alpine:3.21 AS production
+FROM alpine:3.22.1 AS production
 
 # Install supervisor and tini for process management
 RUN apk add --no-cache supervisor tzdata procps
