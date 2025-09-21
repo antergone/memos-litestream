@@ -53,7 +53,7 @@ docker run -d \
 -e LITESTREAM_REPLICA_ENDPOINT=s3.us-west-000.backblazeb2.com \
 -e LITESTREAM_ACCESS_KEY_ID=000000001a2b3c40000000001 \
 -e LITESTREAM_SECRET_ACCESS_KEY=K000ABCDEFGHiJkLmNoPqRsTuVwXyZ0 \
-ghcr.io/hu3rror/memos-litestream:stable # Tag is `stable`
+ghcr.io/antergone/memos-litestream:stable # Tag is `stable`
 ```
 
 ### Scheme 2: Running Memos with Litestream Backup and Enabling Telegram BOT (Memogram)
@@ -69,7 +69,7 @@ docker run -d \
 -e LITESTREAM_ACCESS_KEY_ID=000000001a2b3c40000000001 \
 -e LITESTREAM_SECRET_ACCESS_KEY=K000ABCDEFGHiJkLmNoPqRsTuVwXyZ0 \
 -e BOT_TOKEN=your-bot-token \
-ghcr.io/hu3rror/memos-litestream:stable-memogram # Tag is `stable-memogram`
+ghcr.io/antergone/memos-litestream:stable-memogram # Tag is `stable-memogram`
 ```
 
 ### Scheme 3: Running Memos with Telegram BOT (Memogram), but without Litestream Backup
@@ -80,7 +80,7 @@ docker run -d \
 -p 5230:5230 \
 -v ~/.memos/:/var/opt/memos \
 -e BOT_TOKEN=your-bot-token \
-ghcr.io/hu3rror/memos-litestream:stable-memogram # Tag is `stable-memogram`
+ghcr.io/antergone/memos-litestream:stable-memogram # Tag is `stable-memogram`
 ```
 
 ### Scheme 4: Running Memos solely, without any other features
@@ -90,7 +90,7 @@ docker run -d \
 --name memos \
 -p 5230:5230 \
 -v ~/.memos/:/var/opt/memos \
-ghcr.io/hu3rror/memos-litestream:stable # Tag is `stable` or use official image `neosmemo/memos:stable`
+ghcr.io/antergone/memos-litestream:stable # Tag is `stable` or use official image `neosmemo/memos:stable`
 ```
 
 ### Environment Variable Explanation

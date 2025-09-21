@@ -53,7 +53,7 @@ docker run -d \
 -e LITESTREAM_REPLICA_ENDPOINT=s3.us-west-000.backblazeb2.com \
 -e LITESTREAM_ACCESS_KEY_ID=000000001a2b3c40000000001 \
 -e LITESTREAM_SECRET_ACCESS_KEY=K000ABCDEFGHiJkLmNoPqRsTuVwXyZ0 \
-ghcr.io/hu3rror/memos-litestream:stable # 标签为 stable
+ghcr.io/antergone/memos-litestream:stable # 标签为 stable
 ```
 
 ### 方案 2 使用 Litestream 备份运行 Memos，并启用 Telegram BOT 功能 (Memogram)
@@ -69,7 +69,7 @@ docker run -d \
 -e LITESTREAM_ACCESS_KEY_ID=000000001a2b3c40000000001 \
 -e LITESTREAM_SECRET_ACCESS_KEY=K000ABCDEFGHiJkLmNoPqRsTuVwXyZ0 \
 -e BOT_TOKEN=your-bot-token \
-ghcr.io/hu3rror/memos-litestream:stable-memogram # 标签为 stable-memogram
+ghcr.io/antergone/memos-litestream:stable-memogram # 标签为 stable-memogram
 ```
 
 ### 方案 3 运行 Memos，并启用 Telegram BOT 功能 (Memogram)，但不使用 Litestream 备份数据库
@@ -80,7 +80,7 @@ docker run -d \
 -p 5230:5230 \
 -v ~/.memos/:/var/opt/memos \
 -e BOT_TOKEN=your-bot-token \
-ghcr.io/hu3rror/memos-litestream:stable-memogram # 标签为 stable-memogram
+ghcr.io/antergone/memos-litestream:stable-memogram # 标签为 stable-memogram
 ```
 
 ### 方案 4 仅运行 Memos，不启用其他功能
@@ -90,7 +90,7 @@ docker run -d \
 --name memos \
 -p 5230:5230 \
 -v ~/.memos/:/var/opt/memos \
-ghcr.io/hu3rror/memos-litestream:stable # 标签为 stable 或直接使用 neosmemo/memos:stable
+ghcr.io/antergone/memos-litestream:stable # 标签为 stable 或直接使用 neosmemo/memos:stable
 ```
 
 ### 环境变量说明
